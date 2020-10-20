@@ -1,11 +1,11 @@
 import React from 'react';
-import NewComponent from "./components/NewComp";
+import ToDo from './components/ToDo';
 
 function App() {
   return (
     <div className="App">
       Wish this was Svelte!
-      <NewComponent />
+      <ToDo />
     </div>
   );
 }
