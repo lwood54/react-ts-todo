@@ -1,10 +1,9 @@
 import React from 'react';
-import ToDo from './components/ToDo';
+import ToDo from './components/ToDoList';
 
 function App() {
   return (
     <div className="App">
-      Wish this was Svelte!
       <ToDo />
     </div>
   );
