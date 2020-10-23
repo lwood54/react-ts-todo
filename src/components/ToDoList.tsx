@@ -20,6 +20,8 @@ useEffect(() => {
 
 const handleRemoveItem = (item: string) => {
   console.log('removing item: ', item);
+  let updatedList = items.filter((i) => i !== item);
+  setItems(updatedList);
 }
 
 const listItems = items.map((item, i) => {

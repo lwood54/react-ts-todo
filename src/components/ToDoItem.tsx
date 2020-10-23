@@ -9,14 +9,14 @@ const StyledItem = styled.div`
 `;
 
 interface Props {
-  item: string,
-  remove: () => void
+  item: string;
+  remove: (item: string) => void;
 }
 
 const ToDoItem: React.FC<Props> = (props: Props) => {
 
   return (
-  <div onClick={props.remove} >
+  <div onClick={(e) => props.remove(props.item)} >
     <StyledItem>
       {props.item}
     </StyledItem>
